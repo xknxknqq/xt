@@ -78,6 +78,8 @@ void copyright(void)
 void usage(void)
 {
   printf("Usage: %s -p port [-b baudrate] [-s stopbits] [--version]", argv0);
+
+  printf("xkn add his step here\n");
   quit(1);
 }
 
@@ -135,6 +137,8 @@ int main
   for (i; i < argc; i++)
     if (!strcmp(argv[i], "--version"))
       copyright();
+
+  printf("xknxkn add his own step after the copyright\n");
 
   done = 0;
   while (!done)
